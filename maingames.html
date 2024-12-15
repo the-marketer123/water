@@ -12,6 +12,7 @@
       
       body {
       font-family: 'Syne', sans-serif; 
+      background-color: #121212;
           }
       
       .container {
@@ -21,10 +22,18 @@
         margin-right: auto;
         margin-left: auto;
       }
+        .thehorizantalline {
+        border: 2px solid white;
+        margin: auto;
+        width: 20%;
+      }
       
       .image-container {
         text-align: center;
         width: 100%;
+      }
+      .gamedescriptions {
+      color: white;
       }
       
       .links-container {
@@ -39,34 +48,34 @@
     </head>
   
   
-    <body class="w3-white">
+    <body>
         <!-- logo. -->
       <div class="image-container">
       <img src="imgs/water.avif" class="w3-margin" alt="Person" max-width="100%" height="150px" style="border-radius: 50%;">
       
        <!-- title n stuff -->
        <div class="w3-margin">
-       <h2 class="w3-text-black"><strong>main games</strong></h2>
-       <hr style="width: 20%; margin: auto; height:1px;color:black;background-color:black;border-style:solid;">
+       <h2 class="w3-text-white"><strong>main games</strong></h2>
+       <hr class="thehorizantalline">
        <p><br><br><br><br></p>
        </div>
   
       <!-- the links for games-->
       <div class="links-container">
         <a href="https://drive.google.com/drive/folders/1uaAzuLP-BphCDneB51yaKHlhAxrpE8KV?usp=drive_link" class="w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" target="_blank"></i>bee swarm simulator</a>
-        <p> download the file<br> once its done, <br> doubleclick it to run </p>
+        <p class="gamedescriptions"> download the file<br> once its done, <br> doubleclick it to run </p>
         <p><br><br></p>
         <a href="https://drive.google.com/file/d/1vy1Pymf8KH4UAaNGYdzpPoKwZz6TrvMS/view?usp=drive_link" class="w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" target="_blank"></i>gunnarson</a>
-        <p> download the file<br> once its done, <br> doubleclick it to run </p>
+        <p class="gamedescriptions"> download the file<br> once its done, <br> doubleclick it to run </p>
         <p><br><br></p>
         <a href="https://drive.google.com/file/d/1wEjgWh10Zg5ZD0VZ7gCbkHtUntMh-ebj/view?usp=drive_link" class="w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" target="_blank"></i>backrooms</a>
-        <p> W I P <br> download the file<br> once its done, <br> doubleclick it to run </p>
+        <p class="gamedescriptions"> W I P <br> download the file<br> once its done, <br> doubleclick it to run </p>
         <p><br><br></p>
         <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.coolmathgames.com%2F0-suika-watermelon-game&sa=D&sntz=1&usg=AOvVaw3j7DxEkAde9Q_ses6IefjC" class="w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" target="_blank"></i>suika</a>
-        <p> that fruit merging game</p>
+        <p class="gamedescriptions"> that fruit merging game</p>
         <p><br><br></p>
         <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.coolmathgames.com%2F0-chess&sa=D&sntz=1&usg=AOvVaw1lqaajKEkBpunlBRkFTIZ-" class="w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" target="_blank"></i>chess</a>
-        <p> its chess</p>
+        <p class="gamedescriptions"> its chess</p>
         
         
       </div>
@@ -80,10 +89,10 @@
         <!-- contact thingy -->
     <div class="w3-container w3-content" style="max-width:390px" id="contact">
       <p><br><br></p>
-      <h5 class="w3-center">credits:</h5>
+      <h5 class="w3-center w3-text-white">credits:</h5>
       <div class="w3-row w3-padding-32">
         <div class="w3-col m12 w3-large w3-margin-bottom">
-          <i style="width:30px"> </i> downloaded games by gunnar <br> others are owned by who owns them
+          <i style="width:30px color:white;"> </i> downloaded games by gunnar <br> others are owned by who owns them
         </div>
       </div>
      
