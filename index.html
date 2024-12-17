@@ -67,7 +67,20 @@ credits:
       <div class="links-container">
         <a href="maingames" class="w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" ></i>main games</a>
         <a href="sites.google.com/oasiscs.org/water/" class="w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" ></i>real water</a>
-        <a href="https://sites.google.com/oasiscs.org/rebornwater/" class="w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" ></i>water reborn</a>
+        <button class="w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" onclick="openGame()">Start My Education</button>
+        <script>
+            function openGame() {
+                var win = window.open()
+                var url = "https://www.startmyeducation.net"
+                var iframe = win.document.createElement('iframe')
+                iframe.style.width = "100%";
+                iframe.style.height = "100%";
+                iframe.style.border = "none";
+                iframe.src = url
+                win.document.body.appendChild(iframe)
+            }
+        </script>
+
       </div>
   
        
