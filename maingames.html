@@ -37,6 +37,7 @@
         text-align: center;
         width: 100%;
       }
+        
       .gamedescriptions {
       color: white;
       }
@@ -48,7 +49,11 @@
         align-items: center;
         gap: 20px;
       }
-      
+      .maingameshidable {}
+      .maingamesshow {}
+      .maingameshide {}
+
+        
       </style>
     </head>
   
@@ -69,6 +74,9 @@
        </div>
         <!-- links for main games -->
       <div class="links-container">
+        <button class="maingamesshow w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" onclick="maingamesShow">Show More</button>
+
+        
         <button class="w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" onclick="openGame1()">Cookie Clicker</button>
         <script>
             function openGame1() {
@@ -117,6 +125,19 @@
         <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.coolmathgames.com%2F0-chess&sa=D&sntz=1&usg=AOvVaw1lqaajKEkBpunlBRkFTIZ-" class="w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" target="_blank"></i>chess</a>
         <p><br></p>
         
+        <button class="maingameshide w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" onclick="displayHide()">Show Less</button>
+        <script>
+          function maingamesHide() {
+            document.getElementByClassName("maingameshidable").style.visibility = "hidden";
+            document.getElementByClassName("maingameshide").style.visibility = "hidden";
+            document.getElementByClassName("maingamesshow").style.visibility = "visible";
+         }
+          function maingamesShow() {
+            document.getElementByClassName("maingameshidable").style.visibility = "visible";
+            document.getElementByClassName("maingameshide").style.visibility = "visible";
+            document.getElementByClassName("maingamesshow").style.visibility = "hidden";
+         }
+        </script>
       </div>
         
         <!-- other gaems header-->
