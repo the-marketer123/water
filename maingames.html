@@ -74,9 +74,9 @@
        </div>
         <!-- links for main games -->
       <div class="links-container">
-        <button class="maingamesshow w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" onclick="maingamesShow()">Show More</button>
+        <button id="maingamesshow" class="w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" onclick="maingamesShow()">Show More</button>
         <p><br></p>
-        
+        <div id="maingamelinks">
         <button class="maingameshidable w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" onclick="openGame1()">Cookie Clicker</button>
         <script>
             function openGame1() {
@@ -124,22 +124,22 @@
         <p><br></p>
         <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.coolmathgames.com%2F0-chess&sa=D&sntz=1&usg=AOvVaw1lqaajKEkBpunlBRkFTIZ-" class="maingameshidable w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" target="_blank"></i>chess</a>
         <p><br></p>
-        
-        <button class="maingameshide w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" onclick="maingamesHide()">Show Less</button>
+        </div>
+        <button id="maingameshide" class="w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" onclick="maingamesHide()">Show Less</button>
         <p><br></p>
         <script>
           function hidehidables() {
-            document.getElementsByClassName("maingamesshow").setAttribute("hidden", true);
+            document.getElementById("maingamesshow").setAttribute("hidden", true);
           }
           function maingamesHide() {
-            document.getElementsByClassName("maingameshidable").setAttribute("hidden", true);
-            document.getElementsByClassName("maingameshide").setAttribute("hidden", true);
-            document.getElementsByClassName("maingamesshow").setAttribute("hidden", false);
+            document.getElementById("maingamelinks").setAttribute("hidden", true);
+            document.getElementById("maingameshide").setAttribute("hidden", true);
+            document.getElementById("maingamesshow").setAttribute("hidden", false);
          }
           function maingamesShow() {
-            document.getElementsByClassName("maingameshidable").setAttribute("hidden", false);
-            document.getElementsByClassName("maingameshide").setAttribute("hidden", false);
-            document.getElementsByClassName("maingamesshow").setAttribute("hidden", true);
+            document.getElementById("maingamelinks").setAttribute("hidden", false);
+            document.getElementById("maingameshide").setAttribute("hidden", false);
+            document.getElementById("maingamesshow").setAttribute("hidden", true);
          }
         </script>
       </div>
