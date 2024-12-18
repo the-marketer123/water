@@ -77,7 +77,7 @@
         <button class="maingamesshow w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" onclick="maingamesShow()">Show More</button>
         <p><br></p>
         
-        <button class="w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" onclick="openGame1()">Cookie Clicker</button>
+        <button class="maingameshidable w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" onclick="openGame1()">Cookie Clicker</button>
         <script>
             function openGame1() {
                 var win = window.open()
@@ -129,7 +129,7 @@
         <p><br></p>
         <script>
           function hidehidables() {
-            document.getElementsByClassName("maingameshide").hidden = "true";
+            document.getElementsByClassName("maingamesshow").hidden = "true";
           }
           function maingamesHide() {
             document.getElementsByClassName("maingameshidable").hidden = "true";
