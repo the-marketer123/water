@@ -56,6 +56,13 @@
       .maingameshide {
         display: inline-block;
       }
+      .othergameshidable {}
+      .othergamesshow {
+        display: inline-block;
+      }
+      .othergameshide {
+        display: inline-block;
+      }
 
         
       </style>
@@ -157,7 +164,7 @@
         
         
       <!-- the links for html games-->
-      <div class="links-container">
+      <div class="links-container" id="othergamelinks">
         <a href="https://drive.google.com/drive/folders/1uaAzuLP-BphCDneB51yaKHlhAxrpE8KV?usp=drive_link" class="w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" target="_blank"></i>bee swarm simulator</a>
         <p class="gamedescriptions"> download the file<br> once its done, <br> doubleclick it to run </p>
         <p><br><br></p>
@@ -167,10 +174,24 @@
         <a href="https://drive.google.com/file/d/1wEjgWh10Zg5ZD0VZ7gCbkHtUntMh-ebj/view?usp=drive_link" class="w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" target="_blank"></i>backrooms</a>
         <p class="gamedescriptions"> W I P <br> download the file<br> once its done, <br> doubleclick it to run </p>
         <p><br><br></p>
-     
+       <script>
+          function othergamesHide() {
+            document.getElementById("othergamelinks").setAttribute("hidden", "true");
+            document.getElementById("othergameshide").setAttribute("hidden", "true");
+            document.getElementById("othergamesshow").removeAttribute("hidden");
+         }
+          function othergamesShow() {
+            document.getElementById("othergamelinks").removeAttribute("hidden");
+            document.getElementById("othergameshide").removeAttribute("hidden");
+            document.getElementById("othergamesshow").setAttribute("hidden", "true");
+         }
+        </script>
         
         
       </div>
+        <button id="othergamesshow" class="w3-button w3-hover-blue w3-large w3-black" style="width: 175px; align-items: center;" onclick="othergamesShow()">Show More</button>
+        <button id="othergameshide" class="w3-button w3-hover-blue w3-large w3-black" style="width: 175px; align-items: center;" onclick="othergamesHide()">Show Less</button>
+
       
       <!-- back button --> 
         <div class="back-button">
