@@ -129,17 +129,17 @@
         <p><br></p>
         <script>
           function hidehidables() {
-            document.getElementsByClassName("maingamesshow").hidden = "true";
+            document.getElementsByClassName("maingamesshow").setAttribute("hidden", true);
           }
           function maingamesHide() {
-            document.getElementsByClassName("maingameshidable").hidden = "true";
-            document.getElementsByClassName("maingameshide").hidden = "true";
-            document.getElementsByClassName("maingamesshow").hidden = "false";
+            document.getElementsByClassName("maingameshidable").setAttribute("hidden", true);
+            document.getElementsByClassName("maingameshide").setAttribute("hidden", true);
+            document.getElementsByClassName("maingamesshow").setAttribute("hidden", false);
          }
           function maingamesShow() {
-            document.getElementsByClassName("maingameshidable").hidden = "false";
-            document.getElementsByClassName("maingameshide").hidden = "false";
-            document.getElementsByClassName("maingamesshow").hidden = "true";
+            document.getElementsByClassName("maingameshidable").setAttribute("hidden", false);
+            document.getElementsByClassName("maingameshide").setAttribute("hidden", false);
+            document.getElementsByClassName("maingamesshow").setAttribute("hidden", true);
          }
         </script>
       </div>
