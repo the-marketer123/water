@@ -134,11 +134,11 @@
           function maingamesHide() {
             document.getElementById("maingamelinks").setAttribute("hidden", "true");
             document.getElementById("maingameshide").setAttribute("hidden", "true");
-            document.getElementById("maingamesshow").setAttribute("hidden", "false");
+            document.getElementById("maingamesshow").removeAttribute("hidden");
          }
           function maingamesShow() {
-            document.getElementById("maingamelinks").setAttribute("hidden", "false");
-            document.getElementById("maingameshide").setAttribute("hidden", "false");
+            document.getElementById("maingamelinks").removeAttribute("hidden");
+            document.getElementById("maingameshide").removeAttribute("hidden");
             document.getElementById("maingamesshow").setAttribute("hidden", "true");
          }
         </script>
