@@ -50,8 +50,12 @@
         gap: 20px;
       }
       .maingameshidable {}
-      .maingamesshow {}
-      .maingameshide {}
+      .maingamesshow {
+        display: inline-block;
+      }
+      .maingameshide {
+        display: inline-block;
+      }
 
         
       </style>
@@ -75,6 +79,7 @@
         <!-- links for main games -->
       <div class="links-container">
         <button id="maingamesshow" class="w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" onclick="maingamesShow()">Show More</button>
+        <button id="maingameshide" class="w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" onclick="maingamesHide()">Show Less</button>
         <p><br></p>
         <div id="maingamelinks">
         <button class="maingameshidable w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" onclick="openGame1()">Cookie Clicker</button>
@@ -125,8 +130,6 @@
         <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.coolmathgames.com%2F0-chess&sa=D&sntz=1&usg=AOvVaw1lqaajKEkBpunlBRkFTIZ-" class="maingameshidable w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" target="_blank"></i>chess</a>
         <p><br></p>
         </div>
-        <button id="maingameshide" class="w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" onclick="maingamesHide()">Show Less</button>
-        <p><br></p>
         <script>
           function hidehidables() {
             document.getElementById("maingamesshow").setAttribute("hidden", "true");
