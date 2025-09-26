@@ -41,14 +41,27 @@
       .gamedescriptions {
       color: white;
       }
-      
       .links-container {
         display: flex;
-        flex-direction: column;
-        max-width: 75%;
-        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 20px;
+        max-width: 75%;
+        margin: auto;
       }
+        @media (max-width: 600px) {
+        .links-container a,
+        .links-container button {
+          flex: 0 1 100%;
+        }
+      }
+
+      .links-container a,
+      .links-container button {
+        flex: 0 1 300px; /* Shrinks or grows to fit, base width = 300px */
+        text-align: center;
+      }
+
       .maingameshidable {
         margin-top:50px;
       }
@@ -93,7 +106,7 @@
         <div class="links-container">
         
         <div id="maingamelinks">
-        <button class="maingameshidable w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" onclick="opentab()">Start My Education</button>
+        <button class="maingameshidable w3-button w3-hover-blue w3-large w3-black"  onclick="opentab()">Start My Education</button>
         <script>
                 function opentab() {
                     var win = window.open('about:blank', '_blank');
@@ -103,10 +116,10 @@
                 }
         </script>          
         <!--<p><br></p>--><br>&nbsp;
-        <a href="games/Cookie Clicker offline/index" class="maingameshidable w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" target="_blank"></i>Cookie Clicker</a>
+        <a href="games/Cookie Clicker offline/index" class="maingameshidable w3-button w3-hover-blue w3-large w3-black"  target="_blank"></i>Cookie Clicker</a>
         <!--<p><br></p>--><br>&nbsp;
-        <a href="smashkarts.io" class="maingameshidable w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" target="_blank"></i>Smash Karts</a>
-        <!--<button class="maingameshidable w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" onclick="openGame2()">Smash Karts</button>
+        <a href="smashkarts.io" class="maingameshidable w3-button w3-hover-blue w3-large w3-black"  target="_blank"></i>Smash Karts</a>
+        <!--<button class="maingameshidable w3-button w3-hover-blue w3-large w3-black"  onclick="openGame2()">Smash Karts</button>
         <script>
             function openGame2() {
                     var win = window.open('about:blank', '_blank');
@@ -117,26 +130,26 @@
                 }
         </script>-->
           <!--<p><br></p>--><br>&nbsp;
-         <a href="games/Snow-Rider3D/index" class="maingameshidable w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" target="_blank"></i>Slope Rider</a>
+         <a href="games/Snow-Rider3D/index" class="maingameshidable w3-button w3-hover-blue w3-large w3-black"  target="_blank"></i>Slope Rider</a>
           <!--<p><br></p>--><br>&nbsp;
      
-        <a href="games/SM64" class="maingameshidable w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" target="_blank"></i>Super Mario 64</a>
+        <a href="games/SM64" class="maingameshidable w3-button w3-hover-blue w3-large w3-black"  target="_blank"></i>Super Mario 64</a>
           <!--<p><br></p>--><br>&nbsp;
-        <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.coolmathgames.com%2F0-suika-watermelon-game&sa=D&sntz=1&usg=AOvVaw3j7DxEkAde9Q_ses6IefjC" class="maingameshidable w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" target="_blank"></i>fruit merger</a>
+        <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.coolmathgames.com%2F0-suika-watermelon-game&sa=D&sntz=1&usg=AOvVaw3j7DxEkAde9Q_ses6IefjC" class="maingameshidable w3-button w3-hover-blue w3-large w3-black"  target="_blank"></i>fruit merger</a>
           <!--<p><br></p>--><br>&nbsp;
-        <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.coolmathgames.com%2F0-chess&sa=D&sntz=1&usg=AOvVaw1lqaajKEkBpunlBRkFTIZ-" class="maingameshidable w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" target="_blank"></i>chess</a>
+        <a href="https://www.google.com/url?q=https%3A%2F%2Fwww.coolmathgames.com%2F0-chess&sa=D&sntz=1&usg=AOvVaw1lqaajKEkBpunlBRkFTIZ-" class="maingameshidable w3-button w3-hover-blue w3-large w3-black"  target="_blank"></i>chess</a>
           <!--<p><br></p>--><br>&nbsp;
-        <a href="games/gunnarson" class="maingameshidable w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" target="_blank"></i>gunnarson</a>
+        <a href="games/gunnarson" class="maingameshidable w3-button w3-hover-blue w3-large w3-black"  target="_blank"></i>gunnarson</a>
           <!--<p><br></p>--><br>&nbsp;
-        <a href="gamewarnings/getpranked" class="maingameshidable w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" target="_blank"></i>gunnarson 2</a>
+        <a href="gamewarnings/getpranked" class="maingameshidable w3-button w3-hover-blue w3-large w3-black"  target="_blank"></i>gunnarson 2</a>
           <!--<p><br></p>--><br>&nbsp;
-          <a href="games/gunnarson_better" class="maingameshidable w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" target="_blank"></i>gunnarson: Christmas Edition</a>
+          <a href="games/gunnarson_better" class="maingameshidable w3-button w3-hover-blue w3-large w3-black"  target="_blank"></i>gunnarson: Christmas Edition</a>
           <!--<p><br></p>--><br>&nbsp;    
-        <a href="games/bss-main/index" class="maingameshidable w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" target="_blank"></i>old bee swarm simulator (new soon)</a>
+        <a href="games/bss-main/index" class="maingameshidable w3-button w3-hover-blue w3-large w3-black"  target="_blank"></i>old bee swarm simulator (new soon)</a>
           <!--<p><br></p>--><br>&nbsp;
-        <a href="games/backrooms" class="maingameshidable w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" target="_blank"></i>backrooms - WIP</a>
+        <a href="games/backrooms" class="maingameshidable w3-button w3-hover-blue w3-large w3-black"  target="_blank"></i>backrooms - WIP</a>
           <!--<p><br></p>--><br>&nbsp;
-        <a href="FNAF" class="maingameshidable w3-button w3-hover-blue w3-large w3-black" style="width: 350px;"></i>FNAF Games</a>
+        <a href="FNAF" class="maingameshidable w3-button w3-hover-blue w3-large w3-black" ></i>FNAF Games</a>
           <!--<p><br></p>--><br>&nbsp;
         </div>
         <script>
